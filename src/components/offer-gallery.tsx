@@ -1,5 +1,5 @@
 import { useAppSelector } from '@/hooks/store-hooks';
-import { selectOfferImages } from '@/store/slices/offer-slice';
+import { selectOfferImages } from '@/store/offer-slice/offer-slice';
 import { memo } from 'react';
 import OfferImage from './offer-image';
 

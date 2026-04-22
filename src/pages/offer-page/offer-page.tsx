@@ -15,7 +15,7 @@ import {
   offerActions,
   selectofferStatusCode,
   selectLimitedNearbyOffers,
-} from '@/store/slices/offer-slice';
+} from '@/store/offer-slice/offer-slice';
 import { fetchOffer, fetchNearby, fetchComments } from '@/store/thunk/offer';
 import { memo, useEffect } from 'react';
 import { Navigate, useParams } from 'react-router-dom';

@@ -1,6 +1,6 @@
 import OfferNearPlacesList from './offer-near-places-list';
 import { useAppSelector } from '@/hooks/store-hooks';
-import { selectLimitedNearbyOffers } from '@/store/slices/offer-slice';
+import { selectLimitedNearbyOffers } from '@/store/offer-slice/offer-slice';
 import { memo } from 'react';
 
 function OfferNearPlaces(): JSX.Element {

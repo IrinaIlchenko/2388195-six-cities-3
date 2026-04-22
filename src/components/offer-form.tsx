@@ -16,7 +16,7 @@ import {
   useCallback,
 } from 'react';
 import '@/components/offer-rewiews/offer-rewiews.css';
-import { selectOffer } from '@/store/slices/offer-slice';
+import { selectOffer } from '@/store/offer-slice/offer-slice';
 
 type ChangeHandler = ReactEventHandler<HTMLInputElement | HTMLTextAreaElement>;
 
