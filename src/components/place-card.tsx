@@ -5,7 +5,7 @@ import { getStarActiveWidth, formattedType } from '@/util';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import MemoizedFavoriteButton from './favorite-button';
-import { appActions } from '@/store/slices/app-slice';
+import { appActions } from '@/store/app/app-slice';
 import { memo, useCallback, useMemo } from 'react';
 
 interface PlaceCardProps {

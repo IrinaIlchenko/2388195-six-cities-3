@@ -1,6 +1,6 @@
 import { SortType } from '@/const';
 import { useAppSelector } from '@/hooks/store-hooks';
-import { selectActiveSort } from '@/store/slices/app-slice';
+import { selectActiveSort } from '@/store/app/app-slice';
 import classNames from 'classnames';
 import { memo, useCallback, useMemo, useState } from 'react';
 import MemoizedSortingOption from './sorting-option';

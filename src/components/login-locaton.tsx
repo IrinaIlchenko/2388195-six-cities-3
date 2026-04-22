@@ -1,6 +1,6 @@
 import { AppRoute } from '@/const';
 import { useAppSelector } from '@/hooks/store-hooks';
-import { selectRandomCity } from '@/store/slices/app-slice';
+import { selectRandomCity } from '@/store/app/app-slice';
 import { memo } from 'react';
 import { Link } from 'react-router-dom';
 

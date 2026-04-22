@@ -1,6 +1,6 @@
 import { AppRoute } from '@/const';
 import { useAppSelector, useAppDispatch } from '@/hooks/store-hooks';
-import { appActions } from '@/store/slices/app-slice';
+import { appActions } from '@/store/app/app-slice';
 import { selectIsAuthorized, selectUserInfo } from '@/store/slices/user-slice';
 import { logout } from '@/store/thunk/user-auth';
 import { memo, useCallback } from 'react';

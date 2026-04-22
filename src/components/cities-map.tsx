@@ -5,7 +5,7 @@ import { CityName, FullOffer, ListOffers } from '@/types/offer';
 import { icon, LayerGroup } from 'leaflet';
 import { useRef, useEffect, useMemo, memo } from 'react';
 import L from 'leaflet';
-import { selectActiveId } from '@/store/slices/app-slice';
+import { selectActiveId } from '@/store/app/app-slice';
 
 interface CitiesMapProps {
   className?: string;
@@ -33,17 +33,25 @@ function CitiesMap({
 
   const map = useMap({ containerMapRef, location: city.location });
 
-  const defaultCustomIcon = useMemo(() => icon({
-    iconUrl: URL_MARKER_DEFAULT,
-    iconSize: [27, 39],
-    iconAnchor: [13.5, 39],
-  }), []);
+  const defaultCustomIcon = useMemo(
+    () =>
+      icon({
+        iconUrl: URL_MARKER_DEFAULT,
+        iconSize: [27, 39],
+        iconAnchor: [13.5, 39],
+      }),
+    [],
+  );
 
-  const currentCustomIcon = useMemo(() => icon({
-    iconUrl: URL_MARKER_CURRENT,
-    iconSize: [27, 39],
-    iconAnchor: [13.5, 39],
-  }), []);
+  const currentCustomIcon = useMemo(
+    () =>
+      icon({
+        iconUrl: URL_MARKER_CURRENT,
+        iconSize: [27, 39],
+        iconAnchor: [13.5, 39],
+      }),
+    [],
+  );
 
   useEffect(() => {
     if (map) {
@@ -82,7 +90,14 @@ function CitiesMap({
         },
       ).addTo(markerLayer.current);
     }
-  }, [activeOfferId, map, currentOffers, currentOffer, currentCustomIcon, defaultCustomIcon]);
+  }, [
+    activeOfferId,
+    map,
+    currentOffers,
+    currentOffer,
+    currentCustomIcon,
+    defaultCustomIcon,
+  ]);
 
   return (
     <section className={`map ${className}`} ref={containerMapRef}></section>

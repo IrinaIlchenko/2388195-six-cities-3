@@ -1,6 +1,6 @@
 import { SortType } from '@/const';
 import { useAppDispatch, useAppSelector } from '@/hooks/store-hooks';
-import { appActions, selectActiveSort } from '@/store/slices/app-slice';
+import { appActions, selectActiveSort } from '@/store/app/app-slice';
 import { ListOffers, CityName } from '@/types/offer';
 import { getSortedOffers, formattedType, formattedOffersNumber } from '@/util';
 import MemoizedPlaceCard from './place-card';
