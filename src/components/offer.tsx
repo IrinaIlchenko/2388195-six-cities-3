@@ -5,8 +5,8 @@ import MemoizedOfferForm from './offer-form';
 import MemoizedOfferReviews from './offer-rewiews/offer-reviews';
 import classNames from 'classnames';
 import { memo, useMemo } from 'react';
-import { selectOffer } from '@/store/slices/offer-slice';
-import { selectIsAuthorized } from '@/store/slices/user-slice';
+import { selectOffer } from '@/store/offer-slice/offer-slice';
+import { selectIsAuthorized } from '@/store/user-slice/user-slice';
 
 function Offer() {
   const offer = useAppSelector(selectOffer);

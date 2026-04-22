@@ -1,6 +1,6 @@
 import { AppRoute, DEFAULT_CITY } from '@/const';
 import { useAppSelector } from '@/hooks/store-hooks';
-import { selectUserInfo } from '@/store/slices/user-slice';
+import { selectUserInfo } from '@/store/user-slice/user-slice';
 import { memo, ReactNode } from 'react';
 import { useLocation, Navigate } from 'react-router-dom';
 

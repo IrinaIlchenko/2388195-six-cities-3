@@ -1,6 +1,6 @@
 import { AppRoute } from '@/const';
 import { useAppDispatch, useAppSelector } from '@/hooks/store-hooks';
-import { selectIsAuthorized } from '@/store/slices/user-slice';
+import { selectIsAuthorized } from '@/store/user-slice/user-slice';
 import { postFavorite } from '@/store/thunk/favorite';
 import { FullOffer } from '@/types/offer';
 import classNames from 'classnames';

@@ -11,7 +11,7 @@ import MemoizedOfferPage from './pages/offer-page/offer-page';
 import { fetchFavorites } from './store/thunk/favorite';
 import { fetchAllOffers } from './store/thunk/offers';
 import { checkAuth } from './store/thunk/user-auth';
-import { selectIsAuthorized } from './store/slices/user-slice';
+import { selectIsAuthorized } from './store/user-slice/user-slice';
 
 export default function App(): JSX.Element {
   const dispatch = useAppDispatch();
