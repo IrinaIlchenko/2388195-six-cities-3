@@ -1,6 +1,6 @@
 import MemoizedFavouriteLocations from '@/components/favorite-locations';
 import { useAppSelector } from '@/hooks/store-hooks';
-import { selectGroupedFavoriteOffers } from '@/store/slices/favorite-slice';
+import { selectGroupedFavoriteOffers } from '@/store/favorite/favorite-slice';
 import { CityName } from '@/types/offer';
 import { memo, useMemo } from 'react';
 

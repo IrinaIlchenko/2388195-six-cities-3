@@ -1,8 +1,6 @@
 import MemoizedLogo from '@/components/logo';
 import { useAppSelector, useDocumentTitle } from '@/hooks/store-hooks';
-import {
-  selectFavoriteCount,
-} from '@/store/slices/favorite-slice';
+import { selectFavoriteCount } from '@/store/favorite/favorite-slice';
 import classNames from 'classnames';
 import MemoizedFavouriteList from '../../components/favourites-list';
 import MemoizedFavouriteEmpty from '../../components/favourite-empty';
