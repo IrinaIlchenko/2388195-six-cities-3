@@ -8,7 +8,7 @@ import {
   useAppDispatch,
   useDocumentTitle,
 } from '@/hooks/store-hooks';
-import { commentsActions } from '@/store/slices/comments-slice';
+import { commentsActions } from '@/store/comments/comments-slice';
 import {
   selectOffer,
   selectOfferStatus,

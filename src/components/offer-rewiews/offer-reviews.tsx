@@ -2,7 +2,7 @@ import { MAX_COMMENTS_COUNT } from '@/const';
 import MemoizedOfferReviewsItem from '../offer-reviews-item';
 import { memo, useMemo } from 'react';
 import { useAppSelector } from '@/hooks/store-hooks';
-import { selectComments } from '@/store/slices/comments-slice';
+import { selectComments } from '@/store/comments/comments-slice';
 
 function OfferReviews(): JSX.Element {
   const comments = useAppSelector(selectComments);

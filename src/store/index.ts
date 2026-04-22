@@ -1,7 +1,7 @@
 import { createAPI } from '@/services/api';
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import { commentsSlice } from './slices/comments-slice';
-import { favoriteSlice } from './slices/favorite-slice';
+import { commentsSlice } from './comments/comments-slice';
+import { favoriteSlice } from './favorite/favorite-slice';
 import { offerSlice } from './slices/offer-slice';
 import { offersSlice } from './slices/offers-slice';
 import { userSlice } from './slices/user-slice';
