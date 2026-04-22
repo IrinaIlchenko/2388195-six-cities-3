@@ -5,7 +5,7 @@ import { useAppSelector, useDocumentTitle } from '@/hooks/store-hooks';
 import {
   selectOffersByCity,
   selectOffersStatus,
-} from '@/store/slices/offers-slice';
+} from '@/store/offers-slice/offers-slice';
 import { CityName } from '@/types/offer';
 import classNames from 'classnames';
 import { Navigate, useParams } from 'react-router-dom';

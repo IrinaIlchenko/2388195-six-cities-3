@@ -1,7 +1,7 @@
 import { RequestStatus } from '@/const';
 import { useAppSelector } from '@/hooks/store-hooks';
 import { selectFavoriteCount } from '@/store/favorite/favorite-slice';
-import { selectStatus } from '@/store/slices/offers-slice';
+import { selectStatus } from '@/store/offers-slice/offers-slice';
 import classNames from 'classnames';
 import { memo, ReactNode } from 'react';
 import MemoizedHeader from './header';
